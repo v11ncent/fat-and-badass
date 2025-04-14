@@ -1,0 +1,27 @@
+@use "./resets";
+@use "./typography";
+
+:root {
+  --clr-white: white;
+  --clr-black: rgb(0, 0, 0, 0.88);
+  --clr-orange: #f35c0a;
+  --clr-accent: var(--clr-orange);
+  --ff-main: "Roomach", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+::selection {
+  color: var(--clr-accent);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+  cursor: url("/assets/images/cursor.svg"), auto;
+}

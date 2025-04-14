@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Roomach";
+  font-weight: 100 900;
+  src: local("Roomach"), url("/assets/fonts/roomach.woff2") format("woff2");
+}
+
+.title {
+  font-family: var(--ff-main);
+  font-size: clamp(1.5rem, 1.5rem + 5vw, 6rem);
+  letter-spacing: 2px;
+}
