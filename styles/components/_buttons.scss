@@ -1,0 +1,17 @@
+a.primary,
+a.secondary {
+  padding: 8px 40px;
+  font-family: var(--ff-secondary);
+  font-size: 1.25rem;
+  border-radius: 10px;
+}
+
+a.primary {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+}
+
+a.secondary {
+  color: var(--clr-white);
+  border: 2px solid var(--clr-white);
+}

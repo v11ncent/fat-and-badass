@@ -1,5 +1,7 @@
 @use "./resets";
 @use "./typography";
+@use "./pages/index" as pages;
+@use "./components/index" as components;
 
 :root {
   --clr-white: white;
@@ -7,6 +9,7 @@
   --clr-orange: #f35c0a;
   --clr-accent: var(--clr-orange);
   --ff-main: "Roomach", sans-serif;
+  --ff-secondary: "Inter", sans-serif;
 }
 
 html,
@@ -14,14 +17,23 @@ body {
   height: 100%;
 }
 
-::selection {
-  color: var(--clr-accent);
-}
-
 body {
   display: grid;
   place-items: center;
+  font-family: var(--ff-main);
   color: var(--clr-white);
   background-color: var(--clr-black);
   cursor: url("/assets/images/cursor.svg"), auto;
+}
+
+.text-width {
+  max-width: 80ch;
+}
+
+.text-center {
+  text-align: center;
+}
+
+::selection {
+  color: var(--clr-accent);
 }

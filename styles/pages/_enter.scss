@@ -1,0 +1,29 @@
+body.enter {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.075;
+    background: url("/assets/images/enter.jpg") repeat center / 120px;
+  }
+
+  section {
+    display: grid;
+    place-items: center;
+  }
+
+  h1 {
+    margin-bottom: 48px;
+    font-size: 3rem;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+  }
+
+  footer {
+    display: flex;
+    gap: 24px;
+  }
+}
