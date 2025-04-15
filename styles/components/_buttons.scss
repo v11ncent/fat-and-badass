@@ -3,6 +3,7 @@ a.secondary {
   padding: 8px 40px;
   font-family: var(--ff-secondary);
   font-size: 1.25rem;
+  border: 2.5px solid var(--clr-white);
   border-radius: 10px;
 }
 
@@ -13,5 +14,4 @@ a.primary {
 
 a.secondary {
   color: var(--clr-white);
-  border: 2px solid var(--clr-white);
 }
