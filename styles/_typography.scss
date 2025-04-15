@@ -10,6 +10,12 @@
   src: local("Inter"), url("/assets/fonts/inter.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Discord";
+  font-weight: 400;
+  src: local("Discord"), url("/assets/fonts/discord.woff2") format("woff2");
+}
+
 .title {
   font-family: var(--ff-main);
   font-size: clamp(1.5rem, 1.5rem + 5vw, 6rem);

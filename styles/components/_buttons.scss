@@ -1,15 +1,20 @@
 a.primary,
 a.secondary {
-  padding: 8px 40px;
+  padding: 12px 40px;
   font-family: var(--ff-secondary);
   font-size: 1.25rem;
-  border: 2.5px solid var(--clr-white);
   border-radius: 10px;
+  text-decoration: none;
 }
 
 a.primary {
+  position: relative;
   color: var(--clr-black);
   background-color: var(--clr-white);
+
+  &:hover {
+    color: var(--clr-accent);
+  }
 }
 
 a.secondary {

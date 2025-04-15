@@ -9,7 +9,7 @@
   --clr-orange: #f35c0a;
   --clr-accent: var(--clr-orange);
   --ff-main: "Roomach", sans-serif;
-  --ff-secondary: "Inter", sans-serif;
+  --ff-secondary: "Discord", sans-serif;
 }
 
 html,
@@ -18,16 +18,26 @@ body {
 }
 
 body {
+  position: relative;
   display: grid;
   place-items: center;
   font-family: var(--ff-main);
   color: var(--clr-white);
   background-color: var(--clr-black);
   cursor: url("/assets/images/cursor.svg"), auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.075;
+    background: url("/assets/images/enter.jpg") repeat center / 250px;
+  }
 }
 
 .text-width {
-  max-width: 80ch;
+  max-width: 70ch;
 }
 
 .text-center {
