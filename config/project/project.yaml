@@ -1,4 +1,4 @@
-dateModified: 1744514059
+dateModified: 1744863651
 email:
   fromEmail: vince@vincewebdesigns.com
   fromName: 'Fat and Badass'
@@ -7,6 +7,7 @@ meta:
   __names__:
     3f5d047a-947c-4463-9e7b-1838c558110d: 'Fat and Badass' # Fat and Badass
     850b93f5-9a4f-454e-989b-d479daa0452e: 'Fat and Badass' # Fat and Badass
+    70452b07-1a05-4551-ae12-822ec4524d67: 'Public Schema' # Public Schema
 system:
   edition: solo
   live: true
