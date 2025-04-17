@@ -1,3 +1,5 @@
+@use "../queries" as queries;
+
 body.enter {
   section {
     display: grid;
@@ -5,14 +7,27 @@ body.enter {
   }
 
   h1 {
-    margin-bottom: 48px;
-    font-size: 2rem;
+    margin-bottom: 24px;
     font-family: var(--ff-secondary);
+    text-align: left;
     line-height: 1.5;
+
+    @media (min-width: queries.$mq-lg) {
+      margin-bottom: 48px;
+      font-size: 2rem;
+      text-align: center;
+    }
   }
 
   footer {
     display: flex;
+    flex-direction: row;
     gap: 24px;
+
+    @media (max-width: queries.$mq-lg) {
+      flex-direction: column;
+      justify-self: stretch;
+      gap: 12px;
+    }
   }
 }

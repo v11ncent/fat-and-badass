@@ -1,0 +1,12 @@
+@use "../queries" as queries;
+
+body.home {
+  section {
+    display: grid;
+    place-items: center;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+}

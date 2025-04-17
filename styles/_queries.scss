@@ -1,0 +1,14 @@
+// So we can use these in .sass files
+$mq-sm: 640px;
+$mq-md: 768px;
+$mq-lg: 1024px;
+$mq-xl: 1280px;
+$mq-2xl: 1536px;
+
+:root {
+  --mq-sm: 640px;
+  --mq-md: 768px;
+  --mq-lg: 1024px;
+  --mq-xl: 1280px;
+  --mq-2xl: 1536px;
+}

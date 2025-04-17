@@ -2,6 +2,7 @@
 @use "./typography";
 @use "./pages/index" as pages;
 @use "./components/index" as components;
+@use "./queries" as queries;
 
 :root {
   --clr-white: white;
@@ -36,6 +37,11 @@ body {
   }
 }
 
+.content-width {
+  max-width: var(--mq-2xl);
+  padding-inline: 1rem;
+}
+
 .text-width {
   max-width: 70ch;
 }
@@ -51,4 +57,20 @@ body {
 
 ::selection {
   color: var(--clr-accent);
+}
+
+.pop-in {
+  animation: pop-in 750ms cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+@keyframes pop-in {
+  from {
+    transform: translateY(25%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
